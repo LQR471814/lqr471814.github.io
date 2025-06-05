@@ -14,14 +14,11 @@ philosophical questions is intentionally vague as to prompt
 discussion on various related questions.
 
 In this article, I would like to provide a compatibilistic
-explanation for the two sides of the debate and hopefully put an
-end to the philosophical conflict for those who only casually
-dabble in philosophy like yours truly.
-
-That said, what is more important than listening to my opinions is
-understanding of the nuance behind different positions on this
-question as well as the reckoning of the far-reaching implications
-a society or culture's answer to this question has on its people.
+explanation for the two sides of the debate. That said, what is
+more important than listening to my opinions is understanding of
+the nuance behind different positions on this question as well as
+the reckoning of the far-reaching implications a society or
+culture's answer to this question has on its people.
 
 To start, we should ask what does the question itself actually
 ask?
