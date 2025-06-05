@@ -30,7 +30,7 @@ menu:
 
 params:
   description: "A website built through Hugo and blogdown."
-  footer: "[GitHub](https://github.com/LQR471814) | [Contact](mailto:hu.sid.business@gmail.com)"
+  footer: "[GitHub](https://github.com/LQR471814) | [YouTube](https://www.youtube.com/@theglitchentity5059) | [Contact](mailto:hu.sid.business@gmail.com)"
 
 markup:
   highlight:
