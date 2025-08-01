@@ -1,7 +1,7 @@
 ---
 title: Dynamic Programming
 author: LQR471814
-date: 04-21-2025
+date: 2025-04-21
 categories:
 - tutorials
 tags:
