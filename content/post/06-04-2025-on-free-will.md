@@ -126,7 +126,6 @@ fellow humans' behavior, it is helpful to draft our rules and
 regulations such that they are not dependent on any such
 predictions.
 
-Both truths are useful in our pursuit to understand the world,
-through the lens of the physical, social, personal, and
-philosophical.
+Both truths are useful in our pursuit to understand the world, but
+they should not be considered incompatible.
 
