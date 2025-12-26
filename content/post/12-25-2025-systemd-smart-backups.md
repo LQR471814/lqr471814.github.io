@@ -60,6 +60,7 @@ Persistent=true
 WantedBy=timers.target
 ```
 
-Now enable the timer with `sudo systemctl enable some-backup.timer` and systemd
-will smartly handle cases like: "new run happens while backup is still running,
-waiting for a required service (like network), or etc..."
+Now enable the timer with `sudo systemctl enable
+some-backup.timer` and systemd will smartly handle cases like:
+"new run happens while backup is still running, waiting for a
+required service (like network), or etc..."
