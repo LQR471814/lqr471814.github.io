@@ -13,19 +13,21 @@ It is often desirable to make backups of a server's data to some
 remote location, however said backups often take up lots of CPU
 and IO time.
 
-Even with a tool like BorgBackup which is quite efficient at
-diffing versions and encrypting on the fly, backups can still
-stall the system if a significant number of changes have built-up
-since the last backup time.
+Even with a tool like BorgBackup, which is already quite efficient
+at diffing versions and encrypting on the fly. Calling `borg
+create` can still stall the system if a significant number of
+changes have accrued since the last backup time.
 
 As such, it would be more sensible to back up more frequently and
-reduce the likelihood of building up large diffs. And ideally,
-these frequent backups would be "nice" to other processes and let
-more important processes take priority before continuing execution.
+reduce the likelihood of building up large diffs. Ideally, these
+frequent backups would also be "nice" to other processes and let
+more important processes take priority before continuing
+execution.
 
-We can do this quite easily with systemd.
+It turns out, we can do this easily without any scripting with
+systemd.
 
-Let's create the service that runs the backup.
+Let's define the service that creates the backup.
 
 ```ini
 [Unit]
@@ -42,7 +44,8 @@ IOSchedulingClass=idle
 ExecStart=/usr/bin/borg create /path/to/repo::arch /path/to/data
 ```
 
-Let's create a timer unit that runs this service periodically.
+Then, let's create a timer unit that runs this service
+periodically.
 
 ```ini
 [Unit]
@@ -64,3 +67,4 @@ Now enable the timer with `sudo systemctl enable
 some-backup.timer` and systemd will smartly handle cases like:
 "new run happens while backup is still running, waiting for a
 required service (like network), or etc..."
+
